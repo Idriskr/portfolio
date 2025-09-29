@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Projets</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: rgba(52,152,219,0.1);
+      border: 1px solid #3498db;
+      border-radius: 16px;
+      padding: 1rem;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .actions {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn-view,
+    .btn-download {
+      color: #fff !important;
+      text-decoration: none;
+      border: 1px solid #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .btn-view:hover,
+    .btn-download:hover {
+      background: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="tabs">
+    <a href="index.html">Accueil</a>
+    <a href="projets.html" class="active">Projets</a>
+    <a href="journal.html">Journal de bord</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1 style="text-align:center;color:#fff;">Mes Projets</h1>
+    <div class="projects-container">
+
+      <div class="card">
+        <h3>Projet 1</h3>
+        <embed src="pdfs/pdf1.pdf" type="application/pdf" width="100%" height="300">
+        <div class="actions">
+          <a href="pdfs/pdf1.pdf" class="btn-view" target="_blank">Voir</a>
+          <a href="pdfs/pdf1.pdf" class="btn-download" download>Télécharger</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Projet 2</h3>
+        <embed src="pdfs/pdf2.pdf" type="application/pdf" width="100%" height="300">
+        <div class="actions">
+          <a href="pdfs/pdf2.pdf" class="btn-view" target="_blank">Voir</a>
+          <a href="pdfs/pdf2.pdf" class="btn-download" download>Télécharger</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Projet 3</h3>
+        <embed src="pdfs/pdf3.pdf" type="application/pdf" width="100%" height="300">
+        <div class="actions">
+          <a href="pdfs/pdf3.pdf" class="btn-view" target="_blank">Voir</a>
+          <a href="pdfs/pdf3.pdf" class="btn-download" download>Télécharger</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Projet 4</h3>
+        <embed src="pdfs/pdf4.pdf" type="application/pdf" width="100%" height="300">
+        <div class="actions">
+          <a href="pdfs/pdf4.pdf" class="btn-view" target="_blank">Voir</a>
+          <a href="pdfs/pdf4.pdf" class="btn-download" download>Télécharger</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
